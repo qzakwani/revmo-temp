@@ -24,7 +24,7 @@ fi
 
 # Download the binary
 echo "Downloading $APP_NAME..."
-curl -fsSL --progress-bar -o "$TMP_DIR/$APP_NAME" "https://github.com/revmo-temp/releases/latest/download/$APP_NAME"
+curl -fsSL --progress-bar -o "$TMP_DIR/$APP_NAME" "https://github.com/qzakwani/revmo-temp/releases/download/v1/$APP_NAME"
 
 # Move the binary to bin directory
 echo "Installing $APP_NAME ..."
@@ -41,7 +41,7 @@ Categories=Utility;
 EOF
 
 
-curl -fsSL --progress-bar -o "$TMP_DIR/$ICON_NAME" "https://github.com/revmo-temp/resources/$ICON_NAME"
+curl -fsSL --progress-bar -o "$TMP_DIR/$ICON_NAME" "https://github.com/revmo-temp/qzakwani/resources/$ICON_NAME"
 sudo mv "$TMP_DIR/$ICON_NAME" "$ICON_DIR/$ICON_NAME"
 
 echo "$APP_NAME installed successfully!"
